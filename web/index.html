@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Senha</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senha</h1>
+
+    <!-- Output da senha -->
+    <div class="output-container">
+      <div id="password-output">
+        <span id="password-text"></span>
+        <button id="refresh-btn" title="Gerar nova senha">&#x21bb;</button>
+      </div>
+      <button id="copy-btn">Copiar</button>
+    </div>
+
+    <!-- Configurações -->
+    <div class="card">
+      <h2>Opções</h2>
+      <div class="checkbox">
+        <input type="checkbox" id="uppercase" checked />
+        <label for="uppercase">Maiúsculas</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="lowercase" checked />
+        <label for="lowercase">Minúsculas</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="numbers" checked />
+        <label for="numbers">Números</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="symbols" checked />
+        <label for="symbols">Símbolos</label>
+      </div>
+
+      <div class="slider">
+        <label for="length">Tamanho da senha</label>
+        <input type="range" id="length" min="1" max="50" value="12" oninput="this.nextElementSibling.value = this.value" />
+        <output>12</output>
+      </div>
+    </div>
+
+    <!-- Modo -->
+    <div class="card">
+      <h2>Modo</h2>
+      <div class="radio">
+        <input type="radio" id="easy-to-say" name="pronounceable" />
+        <label for="easy-to-say">Easy to say</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="easy-to-read" name="pronounceable" />
+        <label for="easy-to-read">Easy to read</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="all" name="pronounceable" checked />
+        <label for="all">All characters</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast">Senha copiada!</div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
