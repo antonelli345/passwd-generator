@@ -1,7 +1,7 @@
 # Password Generator
 
 Ferramenta simples para gerar senhas seguras, disponível tanto via linha de comando (CLI) quanto interface web.  
-Página web: [https://fantonelli.com/pass-generator](https://fantonelli.com/pass-generator)
+Página web: [https://pass-generator.fantonelli.com](https://pass-generator.fantonelli.com)
 
 ## Funcionalidades
 
